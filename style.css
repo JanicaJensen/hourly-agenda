@@ -1,3 +1,9 @@
+:root {
+  --cinderella: #8eecf5;
+  --lavender: #cfbaf0;
+  --orange: #ffcfd2;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -31,17 +37,17 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color:var(--cinderella);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--lavender);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--orange);
   color: white;
 }
 
