@@ -1,22 +1,40 @@
+
+
 :root {
-  --cinderella: #8eecf5;
-  --lavender: #cfbaf0;
-  --orange: #ffcfd2;
+  --text: #e0f0ea;
+  --past: #574f7d;
+  --future: #95adbe;
+  --present: #503a65;
+  --background: #3c2a4d;
+  --sacramento: 'Sacramento', cursive;
+  --raleway: 'Raleway', sans-serif;
+  --delius:'Delius', cursive;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background: 
+  background-color: var(--background);
 }
+h1 {
+  font-family: var(--sacramento);
+  color: var(--text);
+}
+
+p {
+  font-family: var(--raleway);
+  color: var(--text);
+}
+
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: var(--text);
   border-left: 1px solid black;
   padding: 10px;
+  font-family: 'Delius', cursive;
+  font-size: 20px;
 }
 
 .description {
@@ -25,39 +43,41 @@ textarea {
 
 .time-block {
   border-radius: 15px;
+  font-family: var(--raleway);
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 1px solid ;
+  color: var(--background);
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: var(--);
+  color: var(--text);
+  /* border-top: 1px dashed #000000; */
 }
 
 .past {
-  background-color:var(--cinderella);
-  color: white;
+  color: var(--text);
+  background-color: var(--past);
 }
 
 .present {
-  background-color: var(--lavender);
-  color: white;
+  background-color: var(--present);
+  color: var(--text);
 }
 
-.future {
-  background-color: var(--orange);
-  color: white;
+.past {
+  background-color: var(--past);
+  color: --text;
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: var(--future);
+  color: var(--text);
 }
 
 .saveBtn i:hover {

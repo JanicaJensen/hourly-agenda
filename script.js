@@ -29,25 +29,25 @@ $(function () {
   
   function hourCompare() {
   
-    var currentHour = dayjs().format('h'); 
+    var currentHour = dayjs().format('HH'); 
     $(".time-block").each(function () {
         var blockHour = parseInt($(this).attr("id").split("hour")[1]);
         console.log(blockHour, currentHour)
 
     if (blockHour < currentHour) {
       $(this).addClass("past");
-      $(this).removeClass("future");
-      $(this).removeClass("present");
+      // $(this).removeClass("future");
+      // $(this).removeClass("present");
     }
     else if (blockHour == currentHour) {
-      $(this).removeClass("past");
+      // $(this).removeClass("past");
       $(this).addClass("present");
-      $(this).removeClass("future");
+      // $(this).removeClass("future");
   
     }
     else { 
-      $(this).removeClass("present");
-      $(this).removeClass("past");
+      // $(this).removeClass("present");
+      // $(this).removeClass("past");
       $(this).addClass("future");
     }})}
     hourCompare();
